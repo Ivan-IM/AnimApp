@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func runAnimationButton(_ sender: Any) {
-        animationView.randomAnimate(lable: animationLable)
+        animationView.randomAnimate(now: animationLable)
     }
 }
 

@@ -9,27 +9,27 @@ import UIKit
 
 extension UIView {
     
-    func randomAnimate(lable: UILabel) {
+    func randomAnimate(now: UILabel) {
         
         let duration: CFTimeInterval = 1.0
         
-        enum AnimationsList: String, CaseIterable {
-            case Shake = "shake"
-            case Pop = "pop"
-            case FlipX = "flipX"
-            case FlipY = "flipY"
-            case Morph = "morph"
-            case Squeeze = "squeeze"
-            case Flash = "flash"
-            case Wobble = "wobble"
-            case Swing = "swing"
+        enum AnimationsList: CaseIterable {
+            case Shake
+            case Pop
+            case FlipX
+            case FlipY
+            case Morph
+            case Squeeze
+            case Flash
+            case Wobble
+            case Swing
 
         }
         
         let animation: AnimationsList = AnimationsList.allCases.randomElement()!
             switch animation {
             case .Shake:
-                lable.text = "Shake"
+                now.text = "Shake"
                 let animation = CAKeyframeAnimation()
                 animation.keyPath = "position.x"
                 animation.values = [0, 30, -30, 30, 0]
@@ -38,6 +38,7 @@ extension UIView {
                 animation.isAdditive = true
                 layer.add(animation, forKey: "shake")
             case .Pop:
+                now.text = "Pop"
                 let animation = CAKeyframeAnimation()
                 animation.keyPath = "transform.scale"
                 animation.values = [0, 0.2, -0.2, 0.2, 0]
@@ -46,6 +47,7 @@ extension UIView {
                 animation.isAdditive = true
                 layer.add(animation, forKey: "pop")
             case .FlipX:
+                now.text = "FlipX"
                 var perspective = CATransform3DIdentity
                 perspective.m34 = -1.0 / layer.frame.size.width/2
                 
@@ -57,6 +59,7 @@ extension UIView {
                 animation.duration = CFTimeInterval(duration)
                 layer.add(animation, forKey: "3d")
             case .FlipY:
+                now.text = "FlipY"
                 var perspective = CATransform3DIdentity
                 perspective.m34 = -1.0 / layer.frame.size.width/2
                 
@@ -69,6 +72,7 @@ extension UIView {
                 animation.duration = CFTimeInterval(duration)
                 layer.add(animation, forKey: "3d")
             case .Morph:
+                now.text = "Morph"
                 let morphX = CAKeyframeAnimation()
                 morphX.keyPath = "transform.scale.x"
                 morphX.values = [1, 1.3, 0.7, 1.3, 1]
@@ -83,6 +87,7 @@ extension UIView {
                 morphY.duration = CFTimeInterval(duration)
                 layer.add(morphY, forKey: "morphY")
             case .Squeeze:
+                now.text = "Squeeze"
                 let morphX = CAKeyframeAnimation()
                 morphX.keyPath = "transform.scale.x"
                 morphX.values = [1, 1.5, 0.5, 1.5, 1]
@@ -97,6 +102,7 @@ extension UIView {
                 morphY.duration = CFTimeInterval(duration)
                 layer.add(morphY, forKey: "morphY")
             case .Flash:
+                now.text = "Flash"
                 let animation = CABasicAnimation()
                 animation.keyPath = "opacity"
                 animation.fromValue = 1
@@ -105,6 +111,7 @@ extension UIView {
                 animation.autoreverses = true
                 layer.add(animation, forKey: "flash")
             case .Wobble:
+                now.text = "Wobble"
                 let animation = CAKeyframeAnimation()
                 animation.keyPath = "transform.rotation"
                 animation.values = [0, 0.3, -0.3, 0.3, 0]
@@ -121,6 +128,7 @@ extension UIView {
                 x.isAdditive = true
                 layer.add(x, forKey: "x")
             case .Swing:
+                now.text = "Swing"
                 let animation = CAKeyframeAnimation()
                 animation.keyPath = "transform.rotation"
                 animation.values = [0, 0.3, -0.3, 0.3, 0]
