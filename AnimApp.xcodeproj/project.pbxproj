@@ -13,7 +13,7 @@
 		CF1FDEF22683215E00D8EBAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1FDEF02683215E00D8EBAC /* Main.storyboard */; };
 		CF1FDEF42683215F00D8EBAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1FDEF32683215F00D8EBAC /* Assets.xcassets */; };
 		CF1FDEF72683215F00D8EBAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1FDEF52683215F00D8EBAC /* LaunchScreen.storyboard */; };
-		CF1FDEFF268322EF00D8EBAC /* AnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FDEFE268322EF00D8EBAC /* AnimationModel.swift */; };
+		CF1FDF01268327BE00D8EBAC /* Extention+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1FDF00268327BE00D8EBAC /* Extention+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		CF1FDEF32683215F00D8EBAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1FDEF62683215F00D8EBAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF1FDEF82683215F00D8EBAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF1FDEFE268322EF00D8EBAC /* AnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModel.swift; sourceTree = "<group>"; };
+		CF1FDF00268327BE00D8EBAC /* Extention+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				CF1FDEF32683215F00D8EBAC /* Assets.xcassets */,
 				CF1FDEF52683215F00D8EBAC /* LaunchScreen.storyboard */,
 				CF1FDEF82683215F00D8EBAC /* Info.plist */,
-				CF1FDEFE268322EF00D8EBAC /* AnimationModel.swift */,
+				CF1FDF00268327BE00D8EBAC /* Extention+UIView.swift */,
 			);
 			path = AnimApp;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF1FDEFF268322EF00D8EBAC /* AnimationModel.swift in Sources */,
+				CF1FDF01268327BE00D8EBAC /* Extention+UIView.swift in Sources */,
 				CF1FDEEF2683215E00D8EBAC /* ViewController.swift in Sources */,
 				CF1FDEEB2683215E00D8EBAC /* AppDelegate.swift in Sources */,
 				CF1FDEED2683215E00D8EBAC /* SceneDelegate.swift in Sources */,
